@@ -1,3 +1,81 @@
-body {
-    width:1440px;
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
+*, *:before, *::after{
+    box-sizing: inherit ;
+}
+
+body {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background: hsl(185, 75%, 39%);
+}
+
+.top, .bottom{
+    position: absolute;
+}
+
+.top {
+    /* transform: translate(-420px,-70px) */
+    transform: rotate(-30deg);
+    transform: translate(-20%,-30%);
+}
+
+.bottom {
+    transform: translate(125%,50%);
+}
+/*
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    width: 350px;
+    padding: 0;
+    margin: 0 auto;
+    height: auto;
+}
+
+.name .stats {
+    flex: 1 0 400px;
+} */
+
+/* 
+Responsive design
+-------------------------------------------
+ */
+/* Phones */
+@media screen and (max-width:414px) {
+
+}
+ /* Ipad Pro */
+ @media screen and (max-width:1024px) {
+     .top {
+         transform: translate(-40%, -50%);
+     }
+     .bottom {
+         transform: translate(50%, 50%);
+     }
+ }
+
+ @media screen and (min-width:1025px) and (max-width:1120px) {
+    .top {
+        transform: translate(-40%, -50%);
+    } 
+    .bottom {
+         transform: translate(50%,40%);
+     }
+ }
+
+ @media screen and (min-width:1121px) and (max-width:1490px) {
+    .top {
+        transform: translate(-60%, -60%);
+    } 
+    .bottom {
+         transform: translate(70%, 50%);
+     }
+ }
