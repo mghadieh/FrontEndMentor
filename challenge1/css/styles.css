@@ -91,7 +91,19 @@ body {
   font-size: 14px;
 }
 
-/* Testing testing 845pm Feb 4*/
+/* footer {
+    margin: 0 auto;
+} */
+.attribution {
+    position: relative;
+    top: 40vh;
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+} 
+
 /*
 Responsive design
 -------------------------------------------
@@ -115,15 +127,15 @@ Responsive design
      }
  } */
 
- @media screen and (min-width:1025px) and (max-width:1120px) {
+ /* @media screen and (min-width:1025px) and (max-width:1120px) {
     .top {
         transform: translate(-40%, -50%);
     }
     .bottom {
          transform: translate(50%,40%);
      }
- }
-
+ } */
+/* 
  @media screen and (min-width:1121px){
     .top {
         transform: translate(-60%, -60%);
@@ -131,4 +143,4 @@ Responsive design
     .bottom {
          transform: translate(100%, 50%);
      }
- }
+ } */
