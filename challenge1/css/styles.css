@@ -27,7 +27,7 @@ body {
 }
 
 .bottom {
-    transform: translate(85%,30%);
+    transform: translate(90%,35%);
 }
 
 .card-box {
@@ -91,44 +91,79 @@ body {
   font-size: 14px;
 }
 
-/* Testing testing 845pm Feb 4*/
+/* footer {
+    margin: 0 auto;
+} */
+.attribution {
+    position: relative;
+    top: 40vh;
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+} 
+
 /*
 Responsive design
 -------------------------------------------
  */
 /* Phones */
-/* @media screen and (max-width:450px) {
-    .top {
-        transform: translate(-40%, -50%);
-    }
-    .bottom {
-        transform: translate(40%, 90%);
-    }
-}*/
- /* Ipad Pro */
- /* @media screen and (min-width:451px) and (max-width:1024px) {
-     .top {
-         transform: translate(-40%, -50%);
-     }
-     .bottom {
-         transform: translate(50%, 50%);
-     }
- } */
 
- @media screen and (min-width:1025px) and (max-width:1120px) {
-    .top {
-        transform: translate(-40%, -50%);
+ @media screen and (max-width:1200px){
+    .card-box {
+        border-radius: 5%;
+        background-color: white;
+        display: relative;
+        margin: 0 auto;
+        vertical-align: middle;
+        height: 400px;
+        width: 350px;
+        transform: translate(0,20%);
     }
-    .bottom {
-         transform: translate(50%,40%);
-     }
- }
 
- @media screen and (min-width:1121px){
-    .top {
-        transform: translate(-60%, -60%);
-    }
     .bottom {
-         transform: translate(100%, 50%);
-     }
- }
+        transform: translate(60%,30%);
+    }
+
+    .attribution {
+        position: relative;
+        font-size: 11px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:700px){
+    .card-box {
+        border-radius: 5%;
+        background-color: white;
+        display: relative;
+        margin: 0 auto;
+        vertical-align: middle;
+        height: 300px;
+        width: 250px;
+        transform: translate(0,20%);
+    }
+
+    .bottom {
+        transform: translate(30%,30%);
+    }
+
+    .attribution {
+        position: relative;
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .profile-pic {
+        display: absolute;
+        border-radius: 50%;
+        border: 5px solid white;
+        /* margin: 0 auto; */
+        transform: translate(65%,-50%);
+    }
+
+    .horizontal-line {
+         margin-top: 0;
+      }
+} 
