@@ -1,0 +1,155 @@
+/** desktop design card: 920 x 510 
+	illustration-woman-online-desktop: 430 x 360 = 26.8rem x 21.8rem */
+
+/* Declaring css variables for colors */
+:root {
+	--text-blue: hsl(238, 29%, 16%);
+	--text-red: hsl(14, 88%, 65%);
+	--text-dark-greyBlue: hsl(237, 12%, 33%);
+	--text-greyBlue: hsl(240, 6%, 50%);
+	--gradient-voilet: hsl(273, 75%, 66%);
+	--gradient-blue: hsl(240, 73%, 65%);
+
+	--divider-greyishBlue: hsl(240, 5%, 91%);
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 100%;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	padding: 10rem 3rem;
+	min-height: 100vh;
+	background: linear-gradient(var(--gradient-voilet), var(--gradient-blue));
+	font-family: 'Kumbh Sans', sans-serif;
+}
+
+.card {
+	background: #ffffff;
+	border-radius: 2rem;
+	max-width: 57.5rem;
+	/* margin: 3rem; */
+	padding: 3.33rem 1.5rem;
+	background-image: url('../images/bg-pattern-mobile.svg');
+	background-size: 15rem;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+.card__image {
+	position: relative;
+}
+
+.card__image img {
+	position: absolute;
+	top: -9.9rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	height: auto;
+	max-width: 15rem;
+	display: block;
+}
+
+.card__box {
+	display: none;
+}
+
+.card__text {
+	padding-top: 5rem;
+}
+
+.accordian__item {
+	border-bottom: 1px solid var(--divider-greyishBlue);
+}
+
+.accordian__question {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	text-align: left;
+	border: none;
+	background: transparent;
+	padding: 0;
+	font-size: 0.8rem;
+	font-family: 'Kumbh Sans', sans-serif;
+}
+
+.accordian__question::after {
+	content: '';
+	display: block;
+	width: 0.625rem;
+	height: 1rem;
+	background-image: url('../images/icon-arrow-down.svg');
+	background-repeat: no-repeat;
+}
+
+.open {
+	font-weight: bold;
+}
+
+.accordian__content {
+	font-size: 0.7rem;
+	line-height: 1.4;
+	padding-bottom: 1rem;
+	/* display: none; */
+}
+
+/******************************************** desktop design ********************************************/
+@media (min-width: 62.5rem) {
+	.card {
+		position: relative;
+		display: flex;
+		margin: 0 auto;
+		padding: 4.3rem 6.25rem 4.3rem 0;
+		background-image: url('../images/bg-pattern-desktop.svg');
+		background-size: 83%;
+		background-position: -245% center;
+	}
+
+	.card__image,
+	.card__text {
+		flex: 1;
+	}
+
+	.card__image {
+		display: flex;
+		align-items: center;
+		overflow: hidden;
+	}
+
+	.card__image img {
+		position: relative;
+		transform: translateX(-4rem);
+		max-width: 26.8rem;
+		left: auto;
+		/* display: block;
+		margin: auto; */
+		top: auto;
+	}
+	.card__box {
+		display: block;
+		position: absolute;
+		z-index: 1;
+		/* transform: translate(-50%, 128%); */ /* this line can replace the next 3 lines */
+		transform: translate(-50%, 50%);
+		left: 0;
+		top: 26%;
+	}
+
+	.card__text {
+		padding-top: 0;
+	}
+
+	/* .accordian__collapse {
+		display: none;
+	} */
+}
