@@ -1,0 +1,14 @@
+* Mobile design: [375px]
+    - 22 px from right and left = 1.46em
+    - 85 px from top and bottom = 5.66em
+    - max-height: 780px = 52em
+    - max-width: 22em;
+
+* Desktop design: [1440px]
+    - 164 px from left and right = 11rem
+    - 155px from top and bottom = 10.33rem
+    - card is centered
+    - card width: 1112px = 74.13rem
+
+font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif;
