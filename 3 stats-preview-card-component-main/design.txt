@@ -9,6 +9,12 @@
     - 155px from top and bottom = 10.33rem
     - card is centered
     - card width: 1112px = 74.13rem
+    - card height: 29.6rem
+    -text:
+        - 70px from the left = 4.66rem
+        - 120px from the right = 8rem
+        - 80px from top = 5.33rem
+        - 66 px from the bottom = 4.4rem
 
 font-family: 'Inter', sans-serif;
 font-family: 'Lexend Deca', sans-serif;

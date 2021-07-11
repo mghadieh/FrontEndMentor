@@ -51,6 +51,7 @@ h1 {
 
 .paragraph {
 	color: var(--main-paragraph);
+	font-family: 'Lexend Deca', sans-serif;
 }
 
 .stat {
@@ -59,6 +60,7 @@ h1 {
 	justify-content: space-evenly;
 	color: var(--main-heading);
 	font-size: 1.5em;
+	font-family: 'Lexend Deca', sans-serif;
 }
 
 .stat__heading {
@@ -83,30 +85,79 @@ img {
 	max-width: 6.33rem;
 	padding: 0.8rem 0;
 }
+
+.attribution {
+	position: relative;
+	right: 10%;
+	left: 1vh;
+	bottom: 6vh;
+	font-size: 11px;
+	text-align: center;
+	color: white;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
 /******************************************** desktop design ********************************************/
-/* @media screen and (min-width: 62.5rem) {
+@media screen and (min-width: 62.5rem) {
 	body {
 		overflow: hidden;
 		background-color: var(--bg-main);
 		min-height: 100vh;
-		max-width: 100%;
 		width: 100%;
-		margin: 0 auto;
+		margin: 10.33rem 11rem;
+		margin-top: 12rem;
+		margin-left: 18.67rem;
 	}
 
 	.card {
-		display: flex;
-		justify-content: space-evenly;
 		flex-direction: row;
-		margin: 10.33rem 11rem;
-		background-color: var(--bg-card);
 		border-radius: 0.4em;
-		max-height: max-content;
 		max-width: 100%;
-		text-align: center;
+		width: 74.13rem;
+		margin: 0;
+	}
+
+	.text {
+		flex-grow: 1;
+		flex-basis: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		padding: 5rem 8rem 4.3rem 4.66rem;
+		text-align: left;
+		width: 50%;
+	}
+
+	h1 {
+		font-size: 2rem;
+		margin: 0;
+	}
+
+	.paragraph {
+		padding-bottom: 3.33rem;
+		font-size: 1.2rem;
 	}
 
 	.stat {
-		display: block;
+		flex-direction: row;
+		justify-content: flex-start;
 	}
-} */
+
+	.filtered {
+		width: 50%;
+	}
+
+	img {
+		flex-grow: 1;
+		flex-basis: 0;
+		height: 100%;
+	}
+
+	.attribution {
+		right: 20%;
+		left: auto;
+		top: 10vh;
+	}
+}
