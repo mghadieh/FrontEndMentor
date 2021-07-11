@@ -31,8 +31,8 @@ Screenshots for both mobile and desktop versions can be found under ./screenshot
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/mghadieh/FrontEndMentor/tree/master/3%20stats-preview-card-component-main]
+- Live Site URL: [https://fem-stats-card-preview-component.vercel.app/]
 
 ## My process
 
