@@ -1,0 +1,113 @@
+/*
+font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif;
+*/
+
+:root {
+	--bkg-brightOrange: hsl(31, 77%, 52%);
+	--bkg-darkCyan: hsl(184, 100%, 22%);
+	--bkg-VdarkCyan: hsl(179, 100%, 13%);
+	--p-transparentWhite: hsla(0, 0%, 100%, 0.75);
+	--bkg-h-btn-lightGrey: hsl(0, 0%, 95%);
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 15px;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	max-width: 21.6rem;
+	margin: 2rem auto;
+	/* height: 88vh; */
+	align-items: center;
+	border-radius: 0.4rem;
+	overflow: hidden;
+}
+
+.left,
+.center,
+.right {
+	justify-content: center;
+	flex-grow: 1;
+}
+
+.left {
+	background-color: var(--bkg-brightOrange);
+	background-image: url('../images/icon-sedans.svg');
+	background-repeat: no-repeat;
+	background-position: 15% 10%;
+}
+
+.center {
+	background: var(--bkg-darkCyan);
+	background-image: url('../images/icon-suvs.svg');
+	background-repeat: no-repeat;
+	background-position: 15% 10%;
+}
+
+.right {
+	background: var(--bkg-VdarkCyan);
+	background-image: url('../images/icon-luxury.svg');
+	background-repeat: no-repeat;
+	background-position: 15% 10%;
+}
+
+h1,
+p {
+	padding: 0 15%;
+}
+
+h1 {
+	font-family: 'Big Shoulders Display', cursive;
+	font-size: 2rem;
+	color: var(--bkg-h-btn-lightGrey);
+	padding-top: 20%;
+}
+
+p {
+	font-family: 'Lexend Deca', sans-serif;
+	color: var(--p-transparentWhite);
+}
+
+button {
+	margin: 12% 15%;
+	border: none;
+	background-color: var(--bkg-h-btn-lightGrey);
+	color: var(--bkg-brightOrange);
+	border-radius: 2rem;
+	padding: 1rem;
+}
+
+button:hover {
+	border: 2px solid var(--p-transparentWhite);
+	background-color: transparent;
+	color: var(--p-transparentWhite);
+}
+
+/**** desktop design ****/
+
+@media screen and (min-width: 62.5rem) {
+	.card {
+		display: flex;
+		flex-direction: row;
+		max-width: 61.33rem;
+	}
+}
+
+/* Added by the challenge creators */
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
