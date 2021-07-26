@@ -77,10 +77,21 @@ button {
 	margin: 12% 15%;
 	border: none;
 	background-color: var(--bkg-h-btn-lightGrey);
-	color: var(--bkg-brightOrange);
 	border-radius: 2rem;
 	padding: 1rem;
 	border: 2px solid var(--p-transparentWhite);
+	font-weight: bold;
+}
+.left > button {
+	color: var(--bkg-brightOrange);
+}
+
+.center > button {
+	color: var(--bkg-darkCyan);
+}
+
+.right > button {
+	color: var(--bkg-VdarkCyan);
 }
 
 button:hover {
