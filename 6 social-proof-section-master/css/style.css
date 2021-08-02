@@ -1,1 +1,118 @@
+:root {
+	--VDarkMegenta: hsl(300, 43%, 22%);
+	--SoftPink: hsl(333, 80%, 67%);
 
+	--DarkGreyishMegenta: hsl(303, 10%, 53%);
+	--lightGrayishMagenta: hsl(300, 24%, 96%);
+	--white: hsl(0, 0%, 100%);
+}
+
+/** Mobile Design */
+html {
+	box-sizing: border-box;
+	font-size: 15px;
+	font-family: 'Spartan', sans-serif;
+	text-align: center;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	padding: 0 1.67rem;
+	background: url('../images/bg-pattern-top-mobile.svg') left top no-repeat,
+		url('../images/bg-pattern-bottom-mobile.svg') right bottom no-repeat;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 5.33rem auto;
+}
+
+.flex__item {
+	margin: 1rem 0;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 2rem;
+	color: var(--VDarkMegenta);
+}
+
+.intro {
+	color: var(--DarkGreyishMegenta);
+	margin: 0;
+}
+
+.rating > div {
+	/* padding: 1rem 0; */
+	background-color: var(--lightGrayishMagenta);
+	border-radius: 0.5rem;
+	margin: 1rem auto;
+}
+
+.rating__text {
+	padding-bottom: 1rem;
+	color: var(--VDarkMegenta);
+	font-weight: 700;
+}
+
+.star {
+	margin: 1rem auto 0.66rem auto;
+	padding: 0 0.53rem;
+}
+
+.reviews {
+	background-color: var(--VDarkMegenta);
+	color: hsl(0, 0%, 100%);
+	margin: 1rem 0;
+	border-radius: 0.5rem;
+	text-align: left;
+	padding: 2.66rem 2rem;
+}
+
+.tag {
+	display: flex;
+	justify-content: flex-start;
+	margin-bottom: 2rem;
+	/* padding-left: 1.53rem; */
+}
+
+.profile__pic {
+	border-radius: 5rem;
+	height: 2.66rem;
+	/* padding-right: 1.53rem; */
+}
+
+.id {
+	padding-left: 2rem;
+}
+
+.name {
+	font-weight: 700;
+}
+
+.verified__buyer {
+	color: var(--SoftPink);
+}
+
+.review__text {
+	font-size: 1rem;
+}
+
+/** Desktop Design */
+
+/** Added by the challenge creator */
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
