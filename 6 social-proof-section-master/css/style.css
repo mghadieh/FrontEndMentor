@@ -108,6 +108,90 @@ h1 {
 
 /** Desktop Design */
 
+@media screen and (min-width: 62.5rem) {
+	.body {
+		background: url('../images/bg-pattern-top-mobile.svg') top no-repeat,
+			url('../images/bg-pattern-bottom-mobile.svg') bottom no-repeat;
+	}
+	.container {
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-content: flex-start;
+		padding: 14% 11rem;
+		justify-content: space-between;
+	}
+
+	.flex__item {
+		margin: 0;
+		flex-basis: 50%;
+	}
+	.flex_item:first-child {
+		width: 28.6rem;
+		align-self: start;
+	}
+	h1,
+	.intro {
+		width: 24rem;
+		text-align: left;
+	}
+
+	.rating > div {
+		width: 29.66rem;
+	}
+
+	.rating > div:first-child {
+		width: 29.66rem;
+	}
+
+	.rating.flex__item {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 2rem;
+	}
+
+	.rating.flex__item > div {
+		margin-bottom: 0;
+		padding: 0.63rem;
+	}
+
+	.rating.flex__item > div:first-child {
+		margin-left: 0;
+	}
+
+	.rating.flex__item > div:last-child {
+		margin-right: 0;
+	}
+
+	.rating__text {
+		display: inline-block;
+		padding: 0;
+	}
+
+	.star {
+		margin: 0 auto;
+	}
+
+	.flex__item:last-child {
+		display: flex;
+		flex-basis: 100%;
+		margin-top: 5rem;
+		justify-content: space-around;
+	}
+
+	.reviews {
+		margin: 1rem;
+		padding: 2.66rem 2rem;
+		max-height: 15.6rem;
+	}
+
+	.reviews:first-child {
+		margin-top: 0;
+	}
+	.reviews:last-child {
+		margin-top: 2rem;
+	}
+}
+
 /** Added by the challenge creator */
 .attribution {
 	font-size: 11px;
