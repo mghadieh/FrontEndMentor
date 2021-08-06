@@ -1,0 +1,115 @@
+:root {
+	--veryDarkGrayBlue: hsl(217, 19%, 35%);
+	--desaturatedDarkBlue: hsl(214, 17%, 51%);
+	--grayBLue: hsl(212, 23%, 69%);
+	--lightGrayBlue: hsl(210, 46%, 95%);
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 13px;
+	font-family: 'Manrope', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+body {
+	max-height: 666px;
+	max-width: 375px;
+	background-color: var(--lightGrayBlue);
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	max-width: 86.66%;
+	margin: 11.26% 6.67%;
+	background-color: white;
+	border-radius: 0.5rem;
+}
+.img__drawers {
+	border-top-left-radius: 0.5rem;
+	border-top-right-radius: 0.5rem;
+}
+
+.text {
+	padding-bottom: 2.6rem;
+}
+
+.text,
+.footer {
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+h1 {
+	font-weight: 700;
+	color: var(--veryDarkGrayBlue);
+}
+
+p {
+	font-weight: 500;
+	color: var(--desaturatedDarkBlue);
+}
+
+.footer {
+	display: flex;
+}
+
+.avatar {
+	max-height: 3.07rem;
+	max-width: 3.07rem;
+	border-radius: 50%;
+}
+
+.info {
+	padding-left: 1.4rem;
+}
+.info > h1,
+.info > p {
+	margin: 0;
+	margin: 0;
+}
+
+.info > h1 {
+	font-size: 1rem;
+}
+.info > p {
+	font-size: 0.8rem;
+}
+
+.date {
+	padding-left: 1rem;
+}
+
+.share__box {
+	border-radius: 50%;
+	width: 2rem;
+	height: 2rem;
+	background-color: var(--lightGrayBlue);
+	margin-left: auto;
+}
+
+.share__button {
+	margin: 0.4rem auto;
+	display: block;
+}
+
+.share {
+	display: none;
+}
+
+/*** Desktop Design ***/
+
+/*** Injected by the challnege ***/
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
